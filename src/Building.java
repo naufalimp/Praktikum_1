@@ -2,9 +2,9 @@
 public class Building {
     String building;
     String Addres;
-    int Floor;
+    String Floor;
 
-    public Building(String building, String Addres, int Floor){
+    public Building(String building, String Addres, String Floor){
         this.building = building;
         this.Addres = Addres;
         this.Floor = Floor;
@@ -15,7 +15,7 @@ public class Building {
         System.out.println("Building Added Succesfully");
     }
 
-    private void displayBuildInfo() {
+    public void displayBuildInfo() {
         System.out.println("==================================");
         System.out.println("------ Building Information ------");
         System.out.println("Name of the building : " + building);
@@ -30,7 +30,7 @@ public class Building {
     String getAddres(){
         return this.Addres;
     }
-    int getNumberFloor(){
+    String getNumberFloor(){
         return this.Floor;
     }
 }
